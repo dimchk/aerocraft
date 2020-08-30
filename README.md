@@ -8,6 +8,11 @@ cd docker
 
 docker-compose up
 
-docker-compose run php-fpm composer install
-
 ```
+Open http://localhost:8080/hangar
+
+To execute tests run 
+````
+cd docker
+
+docker-compose run php-fpm php  bin/phpunit
